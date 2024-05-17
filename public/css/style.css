@@ -1,0 +1,183 @@
+:root {
+    --spacing: 0.25rem;
+    --ff-primary: "calisto mt" "sans-serif";
+    --ff-secondary: "forte";
+    --clr-primary: hsl(211, 16%, 30%);
+    --clr-primary2: hsl(200, 3%, 79%);
+    --clr-primary1: hsla(211, 16%, 30%, 0.548);
+    --transition: all 0.4s linear;
+    --clr-secondary: hsl(211, 19%, 43%);
+    --clr-text: hsl(110, 7%, 84%);
+    --clr-pink: hsla(312, 77%, 66%, 1);
+    --clr-pink2: rgb(213, 156, 202);
+
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    /* var */
+
+    --clr-primary-3: hsla(312, 77%, 66%, 1);
+    /* lighter shades of primary color */
+
+    --clr-primary-8: hsl(315, 91%, 46%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: var(--clr-primary);
+    font-family: var(--ff-primary);
+}
+nav {
+    color: white;
+}
+nav a {
+    margin: 0px 5px;
+}
+.language {
+    max-width: max-content;
+    margin: 0px 5px;
+}
+.language .active {
+    background-color: white;
+    color: black;
+}
+.navbar-text {
+    margin: 0px 10px;
+}
+.content {
+    margin-top: 140px;
+}
+footer {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgb(33, 37, 41);
+    padding: 20px 0px;
+}
+table {
+    max-width: 80vh;
+}
+
+/* GLOBAL CSS */
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style-type: none;
+}
+p {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 969px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+img:not(.logo, .slider) {
+    display: block;
+    width: 100%;
+}
+section {
+    padding: 1rem 3rem;
+}
+.section-center {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90vw;
+}
+.section-title {
+    text-align: center;
+    /* cursor: pointer; */
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+.section-title span {
+    color: white;
+}
+.section-title h2 {
+    font-family: var(--ff-secondary);
+    font-size: 3rem;
+    color: #fff;
+
+    letter-spacing: 0.5rem;
+}
+.btn:hover {
+    transform: scale(1.07);
+    background: hsla(0, 0%, 100%, 0.801);
+    color: hsl(322, 71%, 55%);
+}
+footer img {
+    width: 100px;
+}
+footer .sosmed img {
+    width: 40px;
+}
+
+/* Banner */
+.parallax {
+    /* transform: translateY(150px); */
+    padding: 0;
+    margin: 0;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1900px;
+    max-height: 900px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+        url(../img/parallax.png) center/cover no-repeat fixed;
+    /* image-rendering: -webkit-optimize-contrast; */
+    text-align: center;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* .parallax-img {
+    height: 300px;
+    transform: translateY(100px);
+    object-fit: contain;
+} */
+.parallax p {
+    font-size: 2rem;
+    transform: translateY(150px);
+}
+
+
+/* Form */
+::placeholder {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.tos {
+    text-align: center;
+}
+.option {
+    background: transparent;
+}
+.form-floating, .d-block {
+    margin: 10px 0px;
+}
+
+/* Index */
+.card-deck {
+    display: flex;
+    margin: 1 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 1rem;
+}
+.carousel {
+    width: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
